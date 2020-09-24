@@ -18,12 +18,22 @@ class MulticampsFragment : Fragment(R.layout.fragment_all_multicamps) {
         lifecycleScope.launch {
             val resp = RetrofitProvider.mccApi.getMulticampCommunities("communities")
             rwMulticamps.adapter = MulticampAdapter(resp.orEmpty().toMutableList()) {
-                val dir= MulticampsFragmentDirections.actionMulticampsFragmentToSingleMulticampFragment(it)
+                val dir =
+                    MulticampsFragmentDirections.actionMulticampsFragmentToSingleMulticampFragment(
+                        it
+                    )
                 findNavController().navigate(dir)
             }
 
         }
-        tv_cpyrght.setOnClickListener {startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/ugurcandede")))}
+        tv_cpyrght.setOnClickListener {
+            startActivity(
+                Intent(
+                    Intent.ACTION_VIEW,
+                    Uri.parse("https://github.com/ugurcandede")
+                )
+            )
+        }
 
 
     }

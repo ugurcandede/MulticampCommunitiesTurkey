@@ -16,9 +16,8 @@ class MulticampAdapter(
     class mcViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         fun bind(item_mc: MccResponse, onClick: (MccResponse) -> Unit) {
             itemView.tv_leader.text = item_mc.leader?.name
-            itemView.tv_dept.text=item_mc.name
+            itemView.tv_dept.text = item_mc.name
             itemView.mc_gdg_avatar.load(item_mc.leader?.photo)
-            //itemView.iv_mc_r.load(R.drawable.ic_gdg)
             itemView.setOnClickListener {
                 onClick(item_mc)
             }

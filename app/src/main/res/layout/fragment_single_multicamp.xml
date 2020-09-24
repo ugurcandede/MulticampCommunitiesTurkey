@@ -86,7 +86,6 @@
             app:layout_constraintTop_toTopOf="@+id/bottom_wave" />
 
 
-
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -141,7 +140,7 @@
             android:id="@+id/tv_SMC_dept"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="2dp"
             android:fontFamily="@font/poppins"
             android:textAlignment="center"
             android:textAppearance="@style/TextAppearance.AppCompat.Body2"
@@ -188,9 +187,10 @@
 
         <ImageView
             android:id="@+id/iv_SMC_mcDep"
-            android:layout_width="299dp"
-            android:layout_height="63dp"
-            android:scaleType="fitCenter"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="18dp"
+            android:scaleType="centerInside"
             app:layout_constraintBottom_toTopOf="@+id/socialLayout"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

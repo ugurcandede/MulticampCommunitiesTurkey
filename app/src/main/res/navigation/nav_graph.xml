@@ -9,16 +9,20 @@
         android:id="@+id/multicampsFragment"
         android:name="com.ugurcandede.multicampcommunitiesturkey.MulticampsFragment"
         android:label="fragment_multicamps"
-        tools:layout="@layout/fragment_all_multicamps" >
+        tools:layout="@layout/fragment_all_multicamps">
         <action
             android:id="@+id/action_multicampsFragment_to_singleMulticampFragment"
-            app:destination="@id/singleMulticampFragment" />
+            app:destination="@id/singleMulticampFragment"
+            app:enterAnim="@anim/enter_from_right"
+            app:exitAnim="@anim/exit_to_left"
+            app:popEnterAnim="@anim/enter_from_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
     </fragment>
     <fragment
         android:id="@+id/singleMulticampFragment"
         android:name="com.ugurcandede.multicampcommunitiesturkey.SingleMulticampFragment"
         android:label="fragment_single_multicamp"
-        tools:layout="@layout/fragment_single_multicamp" >
+        tools:layout="@layout/fragment_single_multicamp">
         <argument
             android:name="MulticampData"
             app:argType="com.ugurcandede.multicampcommunitiesturkey.data.model.MccResponse" />
