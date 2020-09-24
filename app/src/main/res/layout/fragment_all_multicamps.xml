@@ -30,7 +30,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:adjustViewBounds="true"
-            android:src="@drawable/top_prettycurve"
+            android:src="@drawable/bg_top_prettycurve"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -91,7 +91,6 @@
         android:layout_width="match_parent"
         android:layout_height="690dp"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-        tools:listitem="@layout/rw_item_multicamp"
-        tools:visibility="invisible" />
+        tools:listitem="@layout/rw_item_multicamp" />
 
 </FrameLayout>

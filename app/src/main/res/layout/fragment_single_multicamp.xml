@@ -31,7 +31,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:adjustViewBounds="true"
-            android:src="@drawable/top_prettycurve"
+            android:src="@drawable/bg_top_prettycurve"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -113,7 +113,7 @@
             android:layout_height="100dp"
             android:adjustViewBounds="true"
             android:elevation="8dp"
-            android:foreground="@drawable/avatar_fb"
+            android:foreground="@drawable/avatar_foreground"
             android:scaleType="centerCrop"
             app:layout_constraintBottom_toBottomOf="@+id/blob"
             app:layout_constraintEnd_toEndOf="@+id/blob"
@@ -211,9 +211,11 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
                 android:text="@string/socialPlatform"
+                android:textColor="@color/white"
                 app:layout_constraintBottom_toTopOf="@id/socialIcons"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent" />
+                app:layout_constraintStart_toStartOf="parent"
+                tools:textColor="#fff" />
 
             <LinearLayout
                 android:id="@+id/socialIcons"
