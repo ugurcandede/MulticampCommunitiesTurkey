@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/multicampsFragment">
+
+    <fragment
+        android:id="@+id/multicampsFragment"
+        android:name="com.ugurcandede.multicampcommunitiesturkey.MulticampsFragment"
+        android:label="fragment_multicamps"
+        tools:layout="@layout/fragment_all_multicamps" >
+        <action
+            android:id="@+id/action_multicampsFragment_to_singleMulticampFragment"
+            app:destination="@id/singleMulticampFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/singleMulticampFragment"
+        android:name="com.ugurcandede.multicampcommunitiesturkey.SingleMulticampFragment"
+        android:label="fragment_single_multicamp"
+        tools:layout="@layout/fragment_single_multicamp" >
+        <argument
+            android:name="MulticampData"
+            app:argType="com.ugurcandede.multicampcommunitiesturkey.data.model.MccResponse" />
+    </fragment>
+</navigation>
