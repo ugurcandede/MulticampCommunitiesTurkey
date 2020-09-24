@@ -12,5 +12,6 @@ Google Developer Communities Turkey Youtube kanalı üzerinden yayınlanan Andro
 
 ### Ekran Görüntüleri
 
-<img src="../raw/master/screenshot_1.jpg" alt="Developer Multicamp Ana Ekran"/>
-<img src="../raw/master/screenshot_2.jpg" alt="Developer Multicamp Detay Ekranı"/>
+Giriş Ekranı             |  Detay Ekranı
+:-------------------------:|:-------------------------:
+<img align="left" width="450"  src="https://raw.githubusercontent.com/ugurcandede/MulticampCommunitiesTurkey/master/screenshots/screenshot_1.jpg" alt="Developer Multicamp Ana Ekran"/>  |  <img align="right" width="450"  src="https://raw.githubusercontent.com/ugurcandede/MulticampCommunitiesTurkey/master/screenshots/screenshot_2.jpg" alt="Developer Multicamp Detay Ekranı"/>
