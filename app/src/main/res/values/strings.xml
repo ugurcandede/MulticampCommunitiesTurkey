@@ -2,4 +2,5 @@
     <string name="app_name">Multicamp Communities - Turkey</string>
     <string name="more_info">for more info</string>
     <string name="socialPlatform">Dou You Follow Us?</string>
+    <string name="loading">Loading, Please Wait...</string>
 </resources>

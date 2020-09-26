@@ -17,12 +17,17 @@ class MulticampsFragment : Fragment(R.layout.fragment_all_multicamps) {
 
         lifecycleScope.launch {
             val resp = RetrofitProvider.mccApi.getMulticampCommunities("communities")
-            rwMulticamps.adapter = MulticampAdapter(resp.orEmpty().toMutableList()) {
-                val dir =
-                    MulticampsFragmentDirections.actionMulticampsFragmentToSingleMulticampFragment(
-                        it
-                    )
-                findNavController().navigate(dir)
+            if (resp.isNotEmpty()) {
+                activityInc.visibility = View.GONE
+                tv_loading.visibility = View.GONE
+                rwMulticamps.adapter = MulticampAdapter(resp.orEmpty().toMutableList()) {
+                    val dir =
+                        MulticampsFragmentDirections.actionMulticampsFragmentToSingleMulticampFragment(
+                            it
+                        )
+                    findNavController().navigate(dir)
+                }
+
             }
 
         }

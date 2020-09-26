@@ -3,4 +3,5 @@
     <string name="app_name">Multicamp Toplulukları - Türkiye</string>
     <string name="more_info">daha fazla bilgi</string>
     <string name="socialPlatform">Bizi Takip Ediyor Musun?</string>
+    <string name="loading">Yükleniyor, Lüften Bekleyin...</string>
 </resources>
